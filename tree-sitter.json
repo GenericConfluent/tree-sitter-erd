@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "erd",
+      "camelcase": "Erd",
+      "title": "Erd",
+      "scope": "source.erd",
+      "file-types": [
+        "erd"
+      ],
+      "injection-regex": "^erd$",
+      "class-name": "TreeSitterErd"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "DSL for Entity Relation diagrams.",
+    "authors": [
+      {
+        "name": "GenericConfluent",
+        "email": "m13power@gmail.com",
+        "url": "https://genericconfluent.github.io/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/GenericConfluent/tree-sitter-erd"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
